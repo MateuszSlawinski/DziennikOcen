@@ -1,4 +1,4 @@
 # DziennikOcen
 
-Nalezy zainstalować w zarzadania pakietami nuget - system.data.sqlclient
-Zainstalować sql2022-SSEI-Expr.EXe i wszystko na diffultowo
+Zainstalować sql2022-SSEI-Expr.exe
+Należy zainstalować pakiet nuget - system.data.sqlclient
