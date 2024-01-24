@@ -1,0 +1,38 @@
+﻿@page
+@model DziennikOcen.Pages.Roles.Admin.IndexModel
+@{
+}
+
+<br>
+<h2>Lista uzytkownikow</h2>
+<a class='btn btn-primary btn-sm' href='/Roles/Admin/Create'>Nowy uzytkownik</a>
+<table class="table">
+	<thead>
+		<tr>
+			<th>user_id</th>
+			<th>role_id</th>
+			<th>firstName</th>
+			<th>lastName</th>
+			<th>email</th>
+			<th>password</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.listUsers)
+		{
+			<tr>
+				<th>@item.user_id</th>
+				<th>@item.role_id</th>
+				<th>@item.firstName</th>
+				<th>@item.lastName</th>
+				<th>@item.email</th>
+				<th>@item.password</th>
+				<th></th>
+				<td>
+					<a class='btn btn-primary btn-sm' href='/Roles/Admin/Edit?id=@item.user_id'>Edit</a>
+					<a class='btn btn-primary btn-sm' href='/Roles/Admin/Delete?id=@item.user_id'>Delete</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
